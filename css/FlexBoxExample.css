@@ -1,0 +1,115 @@
+﻿html {
+    overflow-x: hidden;
+    padding: 5%;
+    margin: 0;
+   
+}
+
+body {
+    background-color: gold;
+    text-align: center;
+    padding: 4%;
+}
+
+#dropdownMenu{
+
+    text-decoration: none;
+    color: white;
+    font-size: 200%;
+}
+#pullUpMenu {
+    text-decoration: none;
+    color: white;
+    font-size: 200%;
+}
+
+#nav-hidden{
+
+  list-style: none;
+}
+
+.items{
+
+    font-size: 80%;
+    color: whitesmoke;
+}
+
+.section-h2{
+
+   background-color: white;
+   padding: 1rem;
+  
+}
+
+
+section {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+}
+
+#article-1{
+    background-color: cadetblue;
+    flex-basis: 20%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 5%;
+    padding: 5%;
+    color: white;
+    font-size: medium;
+}
+
+#article-2 {
+    background-color: darkgray;
+    flex-basis: 20%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 5%;
+    padding: 5%;
+    color: white;
+    font-size: medium;
+}
+
+#article-3{
+    background-color: darkgreen;
+    flex-basis: 20%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 5%;
+    color: white;
+    font-size: medium;
+}
+
+footer{
+
+    background-color: burlywood;
+    padding: 5%;
+}
+
+form {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.col-1, .col-2, .col-3, .col-4 {
+    flex-basis: 100%;
+    padding: 0.7rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+
+
+#submitButton {
+   
+    width: 10%;
+    padding: 0.3rem;
+    color: white;
+    background-color: cornflowerblue;
+    border-bottom-left-radius: 20%;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+}

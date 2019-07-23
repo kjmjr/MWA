@@ -1,0 +1,899 @@
+﻿<!-- Kevin McAdoo
+Purpose: MWA business website
+Date: 5-9-2019 -->
+<!-- this code is used for older browsers to interpret as a comment -->
+<!-- [if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <!-- meta tag used for the user -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="Want to get grow your business? Click the link and find out how you can grow your business!!" />
+    <meta name="author" content="Kevin McAdoo" />
+    <meta name="keywords" content="HTML,CSS,JavaScript" />
+    <meta name="keywords" content="coding, devlife, coding sessions" />
+    <meta name="keywords" content="codingPracticeOne.jpg, 27302" />
+    <meta name="keywords" content="codingPracticeTwo.jpg, 27302" />
+    <meta name="keywords" content="logoOne.jpg, 27302" />
+    <meta name="keywords" content="logoTwo.jpg, 27302" />
+    <meta name="keywords" content="McAdoo, logo" />
+    <meta name="keywords" content="McAdoo's Web Agency" />
+    <meta name="keywords" content="icons, phone, email, contact, service, prices, tables, business cycle, design, develop, deploy, maintain" />
+    <link type="text/css" rel="stylesheet" href="css/mobile.css" />
+    <link type="text/css" rel="stylesheet" href="css/mediaQueries.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRobotto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+    <link rel="icon" type="images/jpg" href="images/logoOne.jpg" />
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <title> McAdoo's Web Agency </title>
+    <style>
+
+
+        body {
+            text-align: center;
+            overflow-x: hidden;
+            font-family: verdanna;
+        }
+
+        header {
+            background-color: dimgrey;
+        }
+
+        .header-logo {
+            width: 2rem;
+            height: 1.8rem;
+            margin-right: 38%;
+            position: relative;
+            top: 2.5rem;
+        }
+
+
+        #header-icon {
+            width: 1.2rem;
+            height: 1rem;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            position: relative;
+            left: 92%;
+            padding: auto;
+            bottom: 4.5rem;
+            cursor: pointer;
+            top: 10%;
+        }
+
+        #close-icon {
+            width: 1.2rem;
+            height: 1rem;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            position: relative;
+            left: 92%;
+            padding: auto;
+            bottom: 4.5rem;
+            cursor: pointer;
+        }
+
+        #contact-attribute, #services-attribute, #portfolio-attribute {
+            color: white;
+        }
+
+        #header-icon hr {
+            color: black;
+            width: 80%;
+        }
+
+        #cycle_nav {
+            background-color: dodgerblue;
+        }
+
+        #cycle_ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 1rem;
+        }
+
+        .cycle_li {
+            color: white;
+            font-weight: bold;
+            margin: auto;
+            text-transform: uppercase;
+        }
+
+        #introduction_section {
+            margin-top: 5%;
+        }
+
+        .service-items {
+            padding: 3%;
+            font-weight: bold;
+            margin: 3%;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #salesPiche_aside {
+            margin-top: 5%;
+        }
+
+        #services_container {
+            margin-top: 5%;
+            position: relative;
+            top: 3rem;
+        }
+
+        #button_id {
+            margin-top: 15%;
+        }
+
+        .idea {
+            width: 15%;
+            height: 15%;
+        }
+
+        .gear {
+            width: 15%;
+            height: 15%;
+        }
+
+        .responsive {
+            width: 15%;
+            height: 15%;
+        }
+
+        .flat {
+            width: 15%;
+            height: 15%;
+        }
+
+
+
+        .phone-flex {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-items: center;
+            margin-left: 25%;
+        }
+
+        .email-flex {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-items: center;
+            margin-left: 20%;
+        }
+
+        .service_phone_icon {
+            margin: 0;
+        }
+
+        .service_email_icon {
+            margin: 0;
+            margin-right: 2%;
+            margin-top: 1%;
+        }
+
+        .maneattraction {
+            margin-top: 15%;
+            margin-bottom: 15%;
+        }
+
+        .samsPhotography {
+            margin-top: 28%;
+            margin-bottom: 1%;
+        }
+
+        .fig-one {
+            margin-top: -2rem;
+        }
+
+
+
+        .fig-two {
+            width: 18rem;
+        }
+
+        .fig-three {
+            width: 18rem;
+            margin-top: 1rem;
+        }
+
+        #footer {
+            margin-top: 50%;
+        }
+
+        .email-wrap {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .phone-wrap {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: -5%;
+        }
+
+        .number {
+            margin-left: 35%;
+        }
+
+        .phone_icon {
+            margin-left: 10%;
+        }
+
+        .email_sentence {
+            margin-left: 30%;
+        }
+    </style>
+    <style>
+
+        @media (min-width: 700px) {
+
+            .header-logo {
+                position: absolute;
+                left: 6%;
+                height: 2.2rem;
+                width: 2.4rem;
+                top: 11%;
+            }
+
+            #title {
+                font-weight: bold;
+                font-size: 250%;
+                text-transform: uppercase;
+                padding: 1%;
+                color: cornsilk;
+                letter-spacing: 0.5rem;
+                position: relative;
+                top: 1rem;
+                right: 3.5rem;
+            }
+
+            #header-icon {
+                position: relative;
+                margin-bottom: 5%;
+            }
+
+            #introduction_section {
+                background-color: burlywood;
+                margin-top: 1%;
+            }
+
+            #services_container {
+                display: flex;
+                flex-direction: row;
+                margin-top: 1%;
+            }
+
+            .service-items {
+            }
+
+                .service-items .one {
+                }
+
+                .service-items .two {
+                }
+
+                .service-items .three {
+                }
+
+            #button_id {
+                margin-top: 5%;
+                margin-bottom: -10%;
+            }
+
+            .services_question {
+                position: relative;
+                top: 5%;
+                color: white;
+            }
+
+            .idea {
+                width: 10%;
+                height: 10%;
+            }
+
+            .gear {
+                width: 10%;
+                height: 10%;
+            }
+
+            .responsive {
+                width: 10%;
+                height: 10%;
+            }
+
+            .flat {
+                margin-top: -5%;
+                width: 10%;
+                height: 10%;
+                margin-bottom: 3%;
+            }
+
+            #salesPiche_aside {
+                margin-top: 1%;
+            }
+
+            #services_section {
+                margin-top: 0;
+            }
+
+            .phone-wrap {
+                margin-left: 15rem;
+            }
+
+            .email-wrap {
+                margin-left: 18rem;
+            }
+
+            .email_icon {
+            }
+
+            .phone_icon {
+                margin-left: 21rem;
+            }
+
+            ..border_contact {
+                margin-bottom: 2rem;
+            }
+
+            .service-contact-button {
+                margin-top: -3%;
+            }
+
+            #websiteExamples_section {
+                margin-bottom: 15%;
+            }
+
+            #footer {
+                margin-top: -5%;
+            }
+
+            #footerTwo {
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="grid">
+        <img src="images/logoTwo.jpg" class="header-logo" />
+        <h2 id="title">WA</h2>
+        <!-- header pop out icon and will have action event
+             <div id="header-icon">
+               <hr>
+             </div>
+             <div id="close-icon">
+               <hr>
+             </div>
+
+             <script type="text/javascript">
+
+        //services_section, contact, portfolio are links
+               var headerIcon = document.querySelector('#header-icon');
+                 var closeIcon = document.querySelector('#close-icon');
+                 closeIcon.style.visibility = 'hidden';
+
+             //  var paragraph = document.createElement('p');
+               //var message = document.createTextNode("");
+
+               // paragraph.setAttribute('id', 'elNote');
+
+                 function add() {
+
+                   //  paragraph.appendChild(message);
+                   //  var element = document.getElementById("header");
+                     //var child = document.getElementById("link");
+                   //  element.insertBefore(paragraph, child);
+
+                     var linkElement = document.getElementById('link-one');
+                     var cLink = document.createElement('a');
+                     cLink.href = "#contact";
+                     var linkNode = document.createTextNode('Contact');
+                     cLink.setAttribute('id', 'contact-attribute');
+
+                     cLink.appendChild(linkNode);
+                     linkElement.appendChild(link);
+
+
+                     linkElement.style.cursor = 'pointer';
+                     headerIcon.style.visibility = 'hidden';
+
+
+                     var linkElement = document.getElementById('link-two');
+                     var ssLink = document.createElement('a');
+                     ssLink.href = "#services_section";
+                     var linkNode = document.createTextNode('Services');
+                     ssLink.setAttribute('id', 'services-attribute');
+
+                     ssLink.appendChild(linkNode);
+                     linkElement.appendChild(link);
+
+
+                     linkElement.style.cursor = 'pointer';
+                     headerIcon.style.visibility = 'hidden';
+
+                     var linkElement = document.getElementById('link-three');
+                     var pLink = document.createElement('a');
+                     pLink.href = "#portfolio";
+                     var linkNode = document.createTextNode('Portfolio');
+                     pLink.setAttribute('id', 'portfolio-attribute');
+
+                     pLink.appendChild(linkNode);
+                     linkElement.appendChild(link);
+
+
+                     linkElement.style.cursor = 'pointer';
+                     headerIcon.style.visibility = 'hidden';
+
+                 }//end function
+
+                 function dismiss() {
+
+
+                     var contactDismiss = document.querySelector('#contact-attribute');
+                     var servicesDismiss = document.querySelector('#services-attribute');
+                     var portfolioDismiss = document.querySelector('#portfolio-attribute');
+                     contactDismiss.parentNode.removeChild(contactDismiss);
+                     servicesDismiss.parentNode.removeChild(servicesDismiss);
+                     portfolioDismiss.parentNode.removeChild(portfolioDismiss);
+
+                     headerIcon.style.visibility = 'visible';
+                     closeIcon.style.visibility = 'hidden';
+
+
+
+                 }
+
+                 headerIcon.addEventListener('click', add, false);
+
+                 closeIcon.addEventListener('click', dismiss, false);
+
+
+             </script>
+
+             <p id="link-one"></p>
+             <p id="link-two"></p>
+             <p id="link-three"></p>
+             -->
+    </header>
+    <main>
+        <nav id="cycle_nav">
+            <ul id="cycle_ul">
+                <li class="cycle_li">Design</li>
+                <li class="cycle_li">Develop</li>
+                <li class="cycle_li">Deploy</li>
+                <li class="cycle_li">Maintain</li>
+            </ul>
+        </nav>
+        <!--introduction container-->
+        <section id="introduction_section" class="grid">
+            <aside id="services_container">
+
+                <p class="service-items one">WEB DESIGN</p>
+                <img src="images/responsive.png"
+                     alt=" Image by Clovis Cheminot from Pixabay"
+                     class="responsive" />
+
+                <p class="service-items two">REDESIGN</p>
+                <img src="images/idea.png"
+                     alt=" Image by Pettycon from Pixabay  " class="idea" />
+
+                <p class="service-items three">MAINTENANCE REPAIRS</p>
+                <img src="images/gear.png"
+                     alt="Image by Samuel1983 from Pixabay " class="gear" />
+
+            </aside>
+            <aside id="salesPiche_aside">
+                <div id="button_id"><a href="#footer">Call Now!</a></div>
+                <h2 class="services_question">Grow your business</h2>
+                <img src="images/flat.png"
+                     alt=" Image by janjf93 from Pixabay " class="flat" />
+            </aside>
+        </section>
+
+        <!--browse packages container-->
+        <section id="services_section" class="grid">
+            <h1 class="package_header">Browse our plans</h1>
+            <article id="website_plans">
+                <article id="Basic" class="content-wrap">
+                    <h1 class="Basic_title">Basic</h1>
+                    <ul id="Basic_ul">
+                        <li class="plan_li">1 Page</li>
+                        <li class="plan_li">Free Consultation</li>
+                        <li class="plan_li">Unique Design</li>
+                        <li class="plan_li">Complete Customer Satisfaction!</li>
+                        <li class="plan_li">3 Professional Icons</li>
+                        <li class="plan_li">3 Professional Images</li>
+                        <li class="plan_li">Website Hosting</li>
+                        <li class="plan_li"> One Free Domain</li>
+                        <li class="plan_li"> Free SSL Certificate</li>
+                        <li class="plan_li"> 1 Free Business Email</li>
+                        <li class="plan_li">Mobile Responsive</li>
+                        <li class="plan_li"> Unlimited Maintenance Repairs</li>
+                    </ul>
+                    <div id="button_id" class="service-contact-button"><a href="#footer">Contact!</a></div>
+                    <div class="border_contact">
+                        <div class="phone-flex">
+                            <img src="images/phone.png"
+                                 alt="Phone" class="service_phone_icon" />
+                            <p> (336)-534-4856</p>
+                        </div>
+                        <div class="email-flex">
+                            <img class="service_email_icon"
+                                 src="images/mail.png"
+                                 alt="email" />
+                            <p>mwa.local@gmail.com</p>
+                        </div>
+                        <p class="price">Price: $276.28</p>
+                    </div>
+                </article>
+                <article id="Premium" class="content-wrap">
+                    <h1 class="Premium_title">Premium</h1>
+                    <ul>
+                        <li class="plan_li"> 3 Pages</li>
+                        <li class="plan_li">Free Consultation</li>
+                        <li class="plan_li">High Performance</li>
+                        <li class="plan_li">Incorporated SEO</li>
+                        <li class="plan_li"> 5 Professional Icons</li>
+                        <li class="plan_li">5 Professional Images</li>
+                        <li class="plan_li">Website Hosting</li>
+                        <li class="plan_li">Secure Domain </li>
+                        <li class="plan_li"> Free SSL Certificate</li>
+                        <li class="plan_li">Timely Deployment</li>
+                        <li class="plan_li"> 3  Free Business Emails</li>
+                        <li class="plan_li">Mobile Responsive</li>
+                        <li class="plan_li"> Unlimited Maintenance Repairs</li>
+                    </ul>
+                    <div id="button_id" class="service-contact-button"><a href="#footer">Contact!</a></div>
+                    <div class="border_contact">
+                        <div class="phone-flex">
+                            <img src="images/phone.png"
+                                 alt="Phone" class="service_phone_icon" />
+                            <p> (336)-534-4856</p>
+                        </div>
+                        <div class="email-flex">
+                            <img class="service_email_icon"
+                                 src="images/mail.png"
+                                 alt="email" />
+                            <p>mwa.local@gmail.com</p>
+                        </div>
+                        <p class="price"> Price: $526.28</p>
+                    </div>
+                </article>
+                <article id="Gold" class="content-wrap">
+                    <h1 class="Gold_title">Gold</h1>
+                    <ul>
+                        <li class="plan_li">5 Pages</li>
+                        <li class="plan_li">Free Consultation</li>
+                        <li class="plan_li">8 Professional Icons</li>
+                        <li class="plan_li">8 Professional Images</li>
+                        <li class="plan_li">Full User Friendly Experience</li>
+                        <li class="plan_li">Incredible SEO Rankings</li>
+                        <li class="plan_li">Website Hosting</li>
+                        <li class="plan_li">Unique Domain </li>
+                        <li class="plan_li">Free SSL Certificate </li>
+                        <li class="plan_li"> 5 Free Business Emails</li>
+                        <li class="plan_li">Mobile Responsive</li>
+                        <li class="plan_li"> Unlimited Maintenance Repairs</li>
+                    </ul>
+                    <div id="button_id" class="service-contact-button"><a href="#footer">Contact!</a></div>
+                    <div class="border_contact">
+                        <div class="phone-flex">
+                            <img src="images/phone.png"
+                                 alt="Phone" class="service_phone_icon" />
+                            <p> (336)-534-4856</p>
+                        </div>
+                        <div class="email-flex">
+                            <img class="service_email_icon"
+                                 src="images/mail.png"
+                                 alt="email" />
+                            <p>mwa.local@gmail.com</p>
+                        </div>
+                        <p class="price">Price: $776.28</p>
+                    </div>
+                </article>
+            </article>
+        </section>
+        <!--Website Examples container-->
+        <section id="websiteExamples_section" class="grid">
+            <div id="portfolio"></div>
+            <div class="portfolio-wrap">
+                <h1 id="websiteExample_header"> Our portfolio provides several solutions </h1>
+                <div class="fig-wrap">
+                    <img src="images/nature.png"
+                         alt="Phone" class="nature" />
+                    <figcaption id="fig-two-id" class="fig-two">
+                        Outdoors type of person?
+                        We provide solutions to the one's who love
+                        nature.
+                    </figcaption>
+                </div>
+                <div class="fig-wrap">
+                    <img src="images/maneattraction.png"
+                         alt="Phone" class="maneattraction" />
+                    <figcaption id="fig-one-id" class="fig-one">
+                        Love to style your hair.
+                        We provide solutions to one's looking to
+                        go into the hair industry.
+                        <a href="https://www.the-maneattraction.com" class="salon-link">The Mane Attraction</a>
+                    </figcaption>
+                </div>
+
+                <div class="fig-wrap">
+                    <img src="images/samsPhotography.png"
+                         alt="Phone" class="samsPhotography" />
+                    <figcaption id="fig-three-id" class="fig-three">
+                        Do you love photography?
+                        We provide solutions to one's looking to start
+                        a career in photography. Call now!
+                    </figcaption>
+                </div>
+            </div>
+        </section>
+
+        <div id="contact"></div>
+        <footer id="footer" class="grid">
+            <section id="footer-section">
+                <aside id="star-rate-section">
+                    <h2 class="rate">Rate Us!</h2>
+                    <div class="star_border">
+                        <x-star-rating value="3" number="5" id="rating"> </x-star-rating>
+                        <script type="text/javascript">
+
+                            class StarRating extends HTMLElement {
+
+                                get value() {
+
+                                    return this.getAttribute('value') || 0;
+
+                                }//end of getter
+
+                                set value(val) {
+
+                                    this.setAttribute('value', val);
+                                    this.highlight(this.value - 1);
+
+                                }//end of setter
+
+                                get number() {
+
+                                    return this.getAttribute('number') || 4;
+                                }
+
+                                set number(val) {
+
+                                    this.setAttribute('number', val);
+
+                                    this.stars = [];
+
+                                    while (this.firstChild) {
+
+                                        this.removeChild(this.firstChild);
+                                    }
+
+                                    for (let i = 0; i < this.number; i++) {
+
+                                        let s = document.createElement('div');
+                                        s.className = 'star';
+                                        this.appendChild(s);
+                                        this.stars.push(s);
+
+
+                                    }//end for
+
+                                    this.value = this.value;
+                                }
+
+                                highlight(index) {
+
+                                    this.stars.forEach((star, i) => {
+
+                                        star.classList.toggle('full', i <= index);
+
+                                    });
+                                }//end
+                                constructor() {
+
+                                    super();
+
+                                    this.number = this.number;
+
+                                    this.addEventListener('mousemove', e => {
+
+                                        let box = this.getBoundingClientRect(),
+
+                                            starIndex = Math.floor((e.pageX - box.left) / box.width * this.stars.length);
+
+                                        this.highlight(starIndex);
+
+                                    });//end event listener
+
+                                    this.addEventListener('mouseout', () => {
+
+                                        this.value = this.value;
+
+                                    });//end event listener
+
+                                    this.addEventListener('click', e => {
+
+                                        let box = this.getBoundingClientRect(),
+
+                                            starIndex = Math.floor((e.pageX - box.left) / box.width * this.stars.length);
+
+                                        this.value = starIndex + 1;
+
+                                        let rateEvent = new Event('rate');
+
+                                        this.dispatchEvent(rateEvent);
+
+                                    });//end event listener
+
+                                }//end constructor
+                            }//end class
+
+                            customElements.define('x-star-rating', StarRating);
+
+
+                        </script>
+                    </div>
+                </aside>
+                <div class="footer-wraper">
+                    <p class="footer_contact"> Contact:</p>
+                    <div class="footer-wrap">
+                        <div class="email-wrap">
+                            <img class="email_icon"
+                                 src="images/mail.png"
+                                 alt="email" />
+                            <p class="email_sentence">mwa.local@gmail.com</p>
+                        </div>
+                        <div class="phone-wrap">
+                            <img src="images/phone.png"
+                                 alt="Phone" class="phone_icon" />
+                            <p class="number"> (336)-534-4856</p>
+                        </div>
+                        <a href="https://www.instagram.com/local_mwa/">
+                            <img class="IG_icon"
+                                 src="images/Instagram.png"
+                                 alt="instagram" />
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-logos">
+                    <img src="images/logoOne.jpg" class="footer-logo" />
+                    <img src="images/logoTwo.jpg" class="footer-logo" />
+                </div>
+                <p class="IG_sentence">
+                    Follow this business on
+                    Instagram to get the latest updates
+                </p>
+            </section>
+        </footer>
+        <!--footer section-->
+        <footer id="footerTwo">
+            <div class="small_footer_items">
+                <small class="small-item"> &copy; McAdoo's Web Agency</small>
+                <small class="small-item"> Vandelay Design </small>
+                <small class="small-item"> FindIcons.com</small>
+                <small class="small-item">Maintenance repairs weekly</small>
+            </div>
+        </footer>
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        window.sr = ScrollReveal();
+
+        sr.reveal('.header-logo', {
+            duration: 2000,
+            delay: 1000,
+            origin: 'top',
+        });
+
+        sr.reveal('#website_plans', {
+            duration: 2000,
+            distance: '100px',
+            origin: 'right',
+
+        });
+
+        sr.reveal('#button_id', {
+            duration: 2000,
+            origin: 'right',
+            distance: '100px'
+
+        });
+        sr.reveal('.design', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '100px'
+
+        });
+        sr.reveal('.develop', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '100px'
+
+        });
+        sr.reveal('.deploy', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '100px'
+
+        });
+        sr.reveal('.maintain', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '100px'
+
+        });
+
+
+        sr.reveal('.maneattraction', {
+            duration: 2000,
+            origin: 'top',
+            distance: '100px'
+
+        });
+        sr.reveal('.nature', {
+            duration: 2000,
+            origin: 'top',
+            distance: '100px'
+
+        });
+        sr.reveal('.samsPhotography', {
+            duration: 2000,
+            origin: 'top',
+            distance: '100px'
+
+        });
+        sr.reveal('.fig-one', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '100px'
+
+        });
+        sr.reveal('.fig-two', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '100px'
+
+        });
+        sr.reveal('.fig-three', {
+            duration: 2000,
+            origin: 'bottom',
+            distance: '100px'
+
+        });
+
+
+    </script>
+    <script>
+        $(function () {
+            $('a[href*="#"]:not([href="#"])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

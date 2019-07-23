@@ -1,0 +1,214 @@
+@media (min-width:700px) {
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr, repeat(2, minmax(auto, 25em)) 1fr;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    header {
+        margin-top: -10%;
+    }
+
+
+    .header-logo {
+        position: absolute;
+        left: 5%;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    #header-icon {
+    }
+
+    main {
+        background-color: white;
+    }
+
+    #introduction_section {
+        background-color: burlywood;
+        margin-top: 2%;
+    }
+
+    #services_container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .service-items {
+        padding: 5%;
+    }
+
+    #salesPiche_aside {
+        margin-top: 1%;
+    }
+
+    #button_id {
+        padding: 1em;
+        margin-left: 25%;
+        margin-right: 25%;
+        grid-column: 2/4;
+    }
+
+
+
+    #services_section {
+        margin-bottom: -10%;
+    }
+
+    .package_header {
+        margin-bottom: -8%;
+    }
+
+    #website_plans {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: -5%;
+    }
+
+    #Basic, #Premium, #Gold {
+        margin: 1rem;
+        width: 50%;
+        height: auto;
+    }
+
+    .service_note {
+        margin-top: -5%;
+    }
+
+    .service_email_icon {
+        margin-left: 10px;
+        position: relative;
+        right: 8%;
+        margin-bottom: -17%;
+    }
+
+
+    #cycle_article {
+        display: flex;
+        justify-content: space-around;
+    }
+
+        #cycle_article h2 {
+            width: 50%;
+        }
+
+
+    .portfolio-wrap {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        margin-top: 5%;
+    }
+
+    .maneattraction, .nature, .samsPhotography {
+        width: 21rem;
+        height: 20rem;
+        margin: 1em;
+    }
+
+    #fig-one-id {
+        width: 19.5rem;
+        height: 5rem;
+        position: absolute;
+        padding: 0.7em;
+        margin: 1em;
+    }
+
+    .salon-link {
+        color: purple;
+    }
+
+    #fig-two-id {
+        width: 19.5rem;
+        height: 5rem;
+        position: absolute;
+        padding: 0.7em;
+        margin-bottom: 10%;
+        margin: 1em;
+    }
+
+    #fig-three-id {
+        width: 19.5rem;
+        height: 5rem;
+        position: absolute;
+        padding: 0.7em;
+        margin-bottom: 10%;
+        margin: 1em;
+    }
+
+
+
+    #footer {
+    }
+
+    #footer-section {
+        justify-content: center;
+        align-content: center;
+        margin-left: -5rem;
+    }
+
+    #star-rate-section {
+        position: relative;
+        right: 30%;
+    }
+
+    .star-border {
+        margin-top: -20%;
+    }
+
+    .footer-wraper {
+        position: relative;
+        left: 30%;
+        margin-top: -30%;
+        top: 80%;
+    }
+
+    .footer_contact {
+        padding: 2%;
+        font-weight: bold;
+        font-family: Poppins;
+    }
+
+    .email_icon {
+        position: absolute;
+        margin-left: 17%;
+    }
+
+    .phone_icon {
+        position: absolute;
+        margin-left: 28%;
+    }
+
+    .IG_icon {
+        margin: 0.5rem;
+    }
+
+    .footer-logos {
+        padding: 2rem;
+        margin-left: 35rem;
+        margin-right: 35rem;
+    }
+
+    .IG_sentence {
+        margin-bottom: 3%;
+    }
+
+    .small_footer_items {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        padding: 0.5em 0;
+    }
+
+    .small-item {
+        margin: 1rem;
+    }
+}
+/*end of querie*/
